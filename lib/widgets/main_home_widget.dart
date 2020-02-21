@@ -55,10 +55,11 @@ class _MainHomeWidgetState extends State<MainHomeWidget>
                 Center(
                   child: PageView.builder(
                     onPageChanged: (index) {
-                     setState(() {
-                       currentEnablePageView=index;
-                     });
-                    },itemCount: animatedShoeCount,
+                      setState(() {
+                        currentEnablePageView = index;
+                      });
+                    },
+                    itemCount: animatedShoeCount,
                     controller: controller,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
